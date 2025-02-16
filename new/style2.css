@@ -1,0 +1,164 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    top: 17vh;
+    left: 10%;
+    width: 960px;
+    height: 100vh;
+    margin: 30px 100px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    backdrop-filter: brightness(0.9);
+    border-radius: 15px;
+    color: white;
+    z-index: 99999;
+}
+
+.header li{
+    display: inline-block;
+    margin-right: 5px;
+    list-style: none;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: 100px;
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.logo {
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 30px rgba(0, 255, 255, 0.5),
+        0 0 40px rgba(0, 255, 255, 0.8);
+    align-self: center;
+    margin-left: 100px;
+    animation: animasiLogo 3s ease-in-out infinite alternate;
+}
+
+@keyframes animasiLogo {
+    0% {
+        transform: rotate(0deg);
+        margin-left: 60px;
+    }
+    25% {
+        transform: rotate(90deg);
+        margin-left: 120px;
+    }
+    50% {
+        transform: rotate(180deg);
+        margin-left: 180px;
+    }
+    75% {
+        transform: rotate(270deg);
+        margin-left: 240px;
+    }
+    100% {
+        transform: rotate(360deg);
+        margin-left: 300px;
+    }
+}
+
+.active {
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 30px rgba(0, 255, 255, 0.5),
+        0 0 40px rgba(0, 255, 255, 0.8);
+    font-style: italic;
+    font-size: 20px;
+    animation: animasiActive 5s ease-in-out infinite alternate;
+}
+
+@keyframes animasiActive {
+    0% {
+        font-size: 15px;
+        margin-rightright: 30px;
+    }
+    25% {
+        font-size: 17px;
+        margin-right   : 60px;
+    }
+    50% {
+        font-size: 20px;
+        margin-right: 90px;
+    }
+    75% {
+        font-size: 22px;
+        margin-right: 120px;
+    }
+    100% {
+        font-size: 25px;
+        margin-right: 150px;
+    }
+}
+
+.contact {
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.sosmed {
+    margin-top: 100px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.send {
+    box-shadow: 0 0 10px salmon
+}
+
+.send:hover {
+    padding: 3px;
+    color: #fff;
+    background-color: #880000;
+    cursor: pointer;
+}
+
+.sosmed a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.sosmed a:hover {
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.5),
+        0 0 30px rgba(0, 255, 255, 0.5),
+        0 0 40px rgba(0, 255, 255, 0.8);
+}
+
+.footer {
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    backdrop-filter: brightness(0.8);
+    border-radius: 15px;
+    font-style: italic;
+    margin-top: 225px;
+}
